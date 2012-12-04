@@ -42,14 +42,15 @@ NSString *const DIYAssetPickerThumbnail = @"DIYAssetPickerThumbnail";
     [self getAssetsArray];
     
     // Header
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancelPicking)];
+	self.navigationItem.hidesBackButton	= YES;
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancelPicking)];
     
-    _header = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 44)];
-    self.header.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-    self.header.barStyle = UIBarStyleBlack;
-    self.header.translucent = true;
-    [self.header setItems:@[ self.navigationItem ]];
-    [self.view addSubview:self.header];
+//    _header = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 44)];
+//    self.header.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+//    self.header.barStyle = UIBarStyleBlack;
+//    self.header.translucent = true;
+//    [self.header setItems:@[ self.navigationItem ]];
+//    [self.view addSubview:self.header];
     
     // Asset Table
     _assetsTable = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
