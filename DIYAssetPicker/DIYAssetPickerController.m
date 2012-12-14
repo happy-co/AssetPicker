@@ -30,7 +30,7 @@ NSString *const DIYAssetPickerThumbnail = @"DIYAssetPickerThumbnail";
 - (void)_setup
 {
     //
-    self.assetType = DIYAssetPickerPhotoVideo;
+    self.assetType = DIYAssetPickerPhoto;
     
     // Setup
     [self setTitle:@"Library"];
