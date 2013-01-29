@@ -180,7 +180,7 @@ NSString *const DIYAssetPickerThumbnail = @"DIYAssetPickerThumbnail";
     int index = indexPath.row * (THUMB_COUNT_PER_ROW);
     int maxIndex = index + ((THUMB_COUNT_PER_ROW)-1);
     int x = THUMB_COUNT_PER_ROW;
-    if (maxIndex >= [self.assetsArray count]) {
+    if (maxIndex >= (NSInteger)[self.assetsArray count]) {
         x = x - (maxIndex - [self.assetsArray count]) - 1;
     }
     
