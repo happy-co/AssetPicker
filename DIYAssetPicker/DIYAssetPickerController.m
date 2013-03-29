@@ -8,6 +8,8 @@
 
 #import "DIYAssetPickerController.h"
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wshadow"
 @interface DIYAssetPickerController ()
 @property ALAssetsLibrary      *assetsLibrary;
 @property NSMutableArray       *assetsArray;
@@ -424,4 +426,5 @@ NSString *const DIYAssetPickerThumbnail = @"DIYAssetPickerThumbnail";
     }];
 }
 
+#pragma clang diagnostic pop // warn shadow
 @end
