@@ -262,7 +262,7 @@ NSString *const DIYAssetPickerThumbnail = @"DIYAssetPickerThumbnail";
     [self.assetsArray removeAllObjects];
     
     [self.assetsLibrary
-         enumerateGroupsWithTypes:ALAssetsGroupSavedPhotos
+         enumerateGroupsWithTypes:ALAssetsGroupAll
          usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
              if (self.assetType == DIYAssetPickerPhoto) {
                  [group setAssetsFilter:[ALAssetsFilter allPhotos]];
