@@ -378,6 +378,11 @@ NSString *const DIYAssetPickerThumbnail = @"DIYAssetPickerThumbnail";
     }
 }
 
+- (UIRectEdge)edgesForExtendedLayout
+{
+    return UIRectEdgeNone;
+}
+
 - (void)toggleExportDisplay
 {
     CGSize size = self.view.frame.size;
