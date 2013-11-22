@@ -232,7 +232,7 @@ NSString *const DIYAssetPickerThumbnail = @"DIYAssetPickerThumbnail";
                 dispatch_sync(dispatch_get_main_queue(), ^{
                     UILabel *lengthLabel = [[UILabel alloc] initWithFrame:CGRectMake(THUMB_SIZE/2.0f, THUMB_SIZE - 14, (THUMB_SIZE/2.0f) - 6, 12)];
                     lengthLabel.text = [NSString stringWithFormat:@"%i:%02i", minutes, seconds];
-                    lengthLabel.textAlignment = UITextAlignmentRight;
+                    lengthLabel.textAlignment = NSTextAlignmentRight;
                     lengthLabel.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:11.0f];
                     lengthLabel.textColor = [UIColor whiteColor];
                     lengthLabel.backgroundColor = [UIColor clearColor];
@@ -410,7 +410,7 @@ NSString *const DIYAssetPickerThumbnail = @"DIYAssetPickerThumbnail";
     progressLabel.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
     progressLabel.backgroundColor = [UIColor clearColor];
     progressLabel.textColor = [UIColor whiteColor];
-    progressLabel.textAlignment = UITextAlignmentCenter;
+    progressLabel.textAlignment = NSTextAlignmentCenter;
     progressLabel.text = @"Exporting video …";
     [self.exportDisplay addSubview:progressLabel];
     
