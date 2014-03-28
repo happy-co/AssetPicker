@@ -179,9 +179,9 @@ NSString *const DIYAssetPickerThumbnail = @"DIYAssetPickerThumbnail";
     CGRect rect = CGRectMake(initialThumbOffset, THUMB_SPACING/2, THUMB_SIZE, THUMB_SIZE);
     
     // Range variables
-    int index = indexPath.row * (THUMB_COUNT_PER_ROW);
-    int maxIndex = index + ((THUMB_COUNT_PER_ROW)-1);
-    int x = THUMB_COUNT_PER_ROW;
+    NSInteger index = indexPath.row * (THUMB_COUNT_PER_ROW);
+    NSInteger maxIndex = index + ((THUMB_COUNT_PER_ROW)-1);
+    NSInteger x = THUMB_COUNT_PER_ROW;
     if (maxIndex >= (NSInteger)[self.assetsArray count]) {
         x = x - (maxIndex - [self.assetsArray count]) - 1;
     }
